@@ -1,0 +1,179 @@
+---
+
+---
+
+<style>
+  @keyframes carousel {
+    /* 0%   { transform: translate3d(0, 0, 0); } */
+    100% { transform: translate3d(calc(15 * -93px), 0, 0); }
+  }
+
+  /* @keyframes carousel {
+    100% {
+      transform: translateX(-100%);
+    }
+  } */
+
+  .slider {
+    background: #3B4252;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+    height: 45px;
+    position: relative;
+    
+    display: flex;
+    align-items: center;
+  }
+
+  .slider::before {
+    content: "";
+    background: linear-gradient(to right,  rgba(59,66,82,1) 0%,rgba(59,66,82,0) 100%);
+    z-index: 2;
+    height: 40px;
+		position: absolute;
+    left: 0;
+		width: 100px;
+  }
+
+  .slider::after {
+    content: "";
+    background: linear-gradient(to left,  rgba(59,66,82,1) 0%,rgba(59,66,82,0) 100%);
+    z-index: 2;
+    height: 40px;
+		position: absolute;
+    right: 0;
+		width: 100px;
+  }
+
+  .match-day {
+    font-size: 0.5rem;
+    background: #3B4252;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+
+  .slide-track {
+    animation:  linear 15s infinite running carousel;
+    height: 45px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: calc(1319px + 29px);
+	}
+
+
+  .slide {
+    flex-shrink: 0;
+    overflow: hidden;
+    font-size: 0.8rem;
+  }
+
+</style>
+
+<div class="slider border-b border-b-nord-polar-night-700">
+  <div class="match-day border-r border-r-nord-polar-night-700 p-2">
+   <p>AO VIVO</p>
+  </div>
+  <div class="slide-track ">
+    <div class="slide m-1">
+     <span>MAN</span>
+     <span>0</span>
+     <span>x</span>
+     <span>1</span>
+     <span>MUN</span>
+    </div> 
+
+    <div class="slide m-1">
+      <span>MAN</span>
+      <span>0</span>
+      <span>x</span>
+      <span>1</span>
+      <span>MUN</span>
+     </div> 
+
+     <div class="slide m-1">
+      <span>MAN</span>
+      <span>0</span>
+      <span>x</span>
+      <span>1</span>
+      <span>MUN</span>
+     </div> 
+
+     <div class="slide m-1">
+      <span>MAN</span>
+      <span>0</span>
+      <span>x</span>
+      <span>1</span>
+      <span>MUN</span>
+     </div> 
+
+     <div class="slide m-1">
+      <span>MAN</span>
+      <span>0</span>
+      <span>x</span>
+      <span>1</span>
+      <span>MUN</span>
+     </div> 
+
+     <div class="slide m-1">
+      <span>MAN</span>
+      <span>0</span>
+      <span>x</span>
+      <span>1</span>
+      <span>MUN</span>
+     </div> 
+
+     <div class="slide m-1">
+      <span>MAN</span>
+      <span>0</span>
+      <span>x</span>
+      <span>1</span>
+      <span>MUN</span>
+     </div>
+     <div class="slide m-1">
+      <span>MAN</span>
+      <span>0</span>
+      <span>x</span>
+      <span>1</span>
+      <span>MUN</span>
+     </div>
+     <div class="slide m-1">
+      <span>MAN</span>
+      <span>0</span>
+      <span>x</span>
+      <span>1</span>
+      <span>MUN</span>
+     </div>
+     <div class="slide m-1">
+      <span>MAN</span>
+      <span>0</span>
+      <span>x</span>
+      <span>1</span>
+      <span>MUN</span>
+     </div>
+     <div class="slide m-1">
+      <span>MAN</span>
+      <span>0</span>
+      <span>x</span>
+      <span>1</span>
+      <span>MUN</span>
+     </div>
+     <div class="slide m-1">
+      <span>MAN</span>
+      <span>0</span>
+      <span>x</span>
+      <span>1</span>
+      <span>MUN</span>
+     </div> 
+     <div class="slide m-1">
+      <span>MAN</span>
+      <span>0</span>
+      <span>x</span>
+      <span>1</span>
+      <span>MUN</span>
+     </div> 
+  </div>
+</div>

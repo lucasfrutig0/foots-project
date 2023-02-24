@@ -1,0 +1,39 @@
+---
+import { SelectLeague } from "../components/SelectLeague";
+import FooterLayout from "./FooterLayout.astro";
+import Header from "./HeaderLayout.astro";
+
+const {title} = Astro.props
+---
+
+<style>
+.wrapper {
+	margin: 0 auto;
+	max-width:  80ch;
+}
+
+</style>
+
+
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+
+	<body class="w-full h-full flex flex-col dark:bg-nord-polar-night-700 dark:text-nord-snow-storm-100 overflow-hidden">
+		
+		<Header>
+			<SelectLeague client:load/>
+			<h1>Bem vindo ao Foot-S, um site sobre estatísticas de futebol!</h1>
+		</Header>
+    <main class="wrapper flex flex-1">
+      <slot />
+    </main>
+		<FooterLayout />
+		<script src="/src/index.ts"></script>
+	</body>
+</html>
