@@ -18,7 +18,7 @@ export const SelectLeague = () => {
         <img
           className="p-1 w-12 h-12 rounded"
           src={leagueToShow[0].logo ?? selectedLeague}
-          alt="Small avatar"
+          alt={leagueToShow[0].name}
         />
       </div>
       <form>

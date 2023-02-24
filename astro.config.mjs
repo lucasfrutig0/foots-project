@@ -1,5 +1,5 @@
-import { defineConfig } from 'astro/config';
-import { VitePWA } from 'vite-plugin-pwa';
+import { defineConfig } from "astro/config";
+import { VitePWA } from "vite-plugin-pwa";
 
 // https://astro.build/config
 import react from "@astrojs/react";
@@ -10,7 +10,12 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   vite: {
-    plugins: [VitePWA()]
+    plugins: [VitePWA()],
   },
-  integrations: [react(), tailwind()]
+  integrations: [react(), tailwind()],
+  test: {
+    coverage: {
+      reporter: ["text", "json", "html"],
+    },
+  },
 });
