@@ -1,5 +1,6 @@
 import { ChangeEvent, useId, useState } from "react";
 import { laegueList } from "../../utils/leagueList";
+import { requestOptions } from "../../utils/requestOptions";
 
 export const SelectLeague = () => {
   const leagueId = useId();
@@ -10,6 +11,13 @@ export const SelectLeague = () => {
 
   function onHandleChangeLeague(e: ChangeEvent<HTMLSelectElement>) {
     setSelectedLeague(e.target.value);
+    fetch(
+      "https://v3.football.api-sports.io/leagues?season=2022",
+      requestOptions
+    )
+      .then((response) => response.text())
+      .then((result) => console.log(result))
+      .catch((error) => console.log("error", error));
   }
 
   return (
@@ -30,10 +38,10 @@ export const SelectLeague = () => {
           value={selectedLeague}
           title="Choose a League"
           onChange={onHandleChangeLeague}
-          className="h-12 dark:bg-nord-polar-night-700 dark:text-nord-snow-storm-100"
+          className="h-12 dark:bg-nord-polar-night-900 dark:text-nord-snow-storm-100"
         >
           {laegueList.map((league) => (
-            <option key={league.name} value={league.name}>
+            <option key={league.id} value={league.id} disabled={!league.active}>
               {league.displayName}
             </option>
           ))}

@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        "nord-polar-night-900": "#292F3A",
         "nord-polar-night-700": "#2E3440",
         "nord-polar-night-500": "#3B4252",
         "nord-polar-night-300": "#434C5E",
