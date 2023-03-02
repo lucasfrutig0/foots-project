@@ -1,0 +1,38 @@
+.premier_league_border {
+  background: linear-gradient(to right,#3D195B, #ECEFF4, white)
+}
+
+.bundesliga_border {
+  background: linear-gradient(to right,red, #4c4c4c, white)
+}
+
+.champions_league {
+  background: linear-gradient(to right,#00004f, #3f74e8, white)
+}
+
+.europa_league {
+  background: linear-gradient(to right,#ed9a0c, #d2d2d2, white)
+}
+
+.la_liga {
+  background: linear-gradient(to right,#e00c1a, #ee8707, #fbec21, #119541, #1b8dcc, #0c519c, #921e7f)
+}
+
+.ligue_1 {
+  background: linear-gradient(to right,#cdfb0a, #091c3e, #fff)
+}
+
+.liberta {
+  background: linear-gradient(to right,#fed15e, #4c4227, #fff)
+}
+
+.brasileiro {
+  background: linear-gradient(to right,#d7b200, #00389f, #d7d7d7)
+}
+
+.copa_do_brasil {
+  background: linear-gradient(to right,#0d5397, #f2cd18, #4e8e1a)
+}
+
+
+

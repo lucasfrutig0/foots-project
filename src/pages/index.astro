@@ -1,10 +1,12 @@
 ---
+import { Hero } from "../components/Hero/Hero";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import MatchsOfDayLayout from "../layouts/MatchsOfDayLayout.astro";
 import StandingsLayout from "../layouts/StandingsLayout.astro";
 ---
 
 <BaseLayout title="Bem vindo ao FootS, um site sobre estatísticas de futebol!">
+  <Hero client:load/>
   <MatchsOfDayLayout />
   <StandingsLayout />
 </BaseLayout>
