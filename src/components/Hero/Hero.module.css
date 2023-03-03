@@ -2,19 +2,18 @@
   background-repeat: no-repeat;
   background-size: cover;
   mask-image: linear-gradient(to bottom, rgba(0,0,0,.7), rgba(0,0,0,0.2),rgba(0,0,0,0));
-  transform: rotate(15deg);
-  width: 500px;
+  transform: rotate(8deg) scale(2);
+  max-width: 500px;
+  aspect-ratio: 4/3;
   opacity: 0.5;
   overflow: hidden;
   position: absolute;
-  top: 60px;
-  left: auto;
+  display: block;
+  top: 0;
+  left: 0;
   bottom: 0;
   right: 0;
+  margin-left: auto;
   z-index: -1;
-}
-
-.bosta {
-  background: linear-gradient(to right,#fed15e, #4c4227, #fff);
-  
+  user-select: none;
 }
