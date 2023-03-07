@@ -19,7 +19,7 @@
 }
 
 .ligue_1 {
-  background: linear-gradient(to right,#cdfb0a, #091c3e, #fff)
+  background: linear-gradient(to right,#cdfb0a 35%, #091c3e, #fff)
 }
 
 .liberta {
@@ -32,6 +32,39 @@
 
 .copa_do_brasil {
   background: linear-gradient(to right,#0d5397, #f2cd18, #4e8e1a)
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #111827 #3B4252;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #111827;
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #3B4252;
+  border-radius: 14px;
+  border: 3px solid #111827;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: #111827;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: #111827;
 }
 
 

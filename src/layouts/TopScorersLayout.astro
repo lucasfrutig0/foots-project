@@ -1,0 +1,35 @@
+---
+import { CardTopScorers } from "../components/CardTopScorers";
+import SectionTitle from "./SectionTitle.astro";
+
+
+---
+
+<style>
+  .top-goals > div {
+    margin-block-start: 1rem;
+  }
+
+  .top-goals > div:last-child {
+    margin-block-end: .8rem;
+  }
+</style>
+
+<section class="
+  top-goals 
+  col-span-full md:col-span-1 sm:row-span-3 
+  px-4 py-2 
+  dark:bg-gray-900 bg-nord-snow-storm-500 
+  p-4 rounded
+  h-96
+  snap-y
+  snap-mandatory
+  overflow-scroll
+  ">
+  <SectionTitle title="Maior Goleador" />
+  <CardTopScorers />
+  <CardTopScorers />
+  <CardTopScorers />
+  <CardTopScorers />
+  <CardTopScorers />
+</section>
