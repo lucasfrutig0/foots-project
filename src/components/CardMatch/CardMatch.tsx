@@ -53,7 +53,7 @@ export const CardMatch = ({ children }: CardMatchProps) => {
       <div
         className={`mx-auto w-full rounded-lg ${borderColorLeague.styleClass} p-0.5`}
       >
-        <div className="flex flex-col h-full rounded-lg bg-gray-800 ">
+        <div className="flex flex-col h-full rounded-lg bg-gray-900 ">
           {children}
         </div>
       </div>
