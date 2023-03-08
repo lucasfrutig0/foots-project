@@ -28,15 +28,8 @@ export const SelectLeague = () => {
   console.log("asdsada", leagueToShow);
 
   return (
-    <div className="focus-within:outline outline-2 outline-nord-frost-blue flex items-center dark:bg-nord-polar-night-500 dark:text-nord-snow-storm-100">
-      <div className="bg-nord-snow-storm-100 w-12">
-        <img
-          className="p-1 w-12 h-12 rounded"
-          src={leagueToShow[0]?.logo}
-          alt={leagueToShow[0]?.name}
-        />
-      </div>
-      <form>
+    <div className="px-4 w-1/4">
+      <form className="focus-within:outline outline-1 outline-nord-frost-blue ">
         <label htmlFor={leagueId} />
         <select
           autoFocus
@@ -45,7 +38,7 @@ export const SelectLeague = () => {
           value={$league}
           title="Choose a League"
           onChange={onHandleChangeLeague}
-          className="h-12 dark:bg-nord-polar-night-900 dark:text-nord-snow-storm-100"
+          className="h-12 w-full px-2 dark:bg-gray-900 dark:text-nord-snow-storm-100"
         >
           {laegueList.map((league) => (
             <option

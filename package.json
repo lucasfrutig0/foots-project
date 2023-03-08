@@ -31,6 +31,7 @@
 		"@testing-library/user-event": "^14.4.3",
 		"@typescript-eslint/parser": "^5.52.0",
 		"@vitest/coverage-c8": "^0.28.5",
+		"daisyui": "^2.51.3",
 		"eslint": "^8.34.0",
 		"eslint-plugin-astro": "^0.23.0",
 		"eslint-plugin-jsx-a11y": "^6.7.1",

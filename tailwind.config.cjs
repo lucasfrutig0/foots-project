@@ -12,6 +12,7 @@ module.exports = {
         "nord-snow-storm-500": "#D8DEE9",
         "nord-snow-storm-300": "#E5E9F0",
         "nord-snow-storm-100": "#ECEFF4",
+        "nord-snow-storm-alpha": "rgba(216,222,233,0.2)",
         "nord-frost-blue": "#88C0D0",
         "nord-frost-green": "#8FBCBB",
         "nord-frost-dark-blue": "#5E81AC",

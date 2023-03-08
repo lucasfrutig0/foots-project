@@ -48,15 +48,5 @@ type CardMatchProps = {
 export const CardMatch = ({ children }: CardMatchProps) => {
   const borderColorLeague = useColorLeague();
 
-  return (
-    <div className="mt-2">
-      <div
-        className={`mx-auto w-full rounded-lg ${borderColorLeague.styleClass} p-0.5`}
-      >
-        <div className="flex flex-col h-full rounded-lg bg-gray-900 ">
-          {children}
-        </div>
-      </div>
-    </div>
-  );
+  return <div className="mt-2"></div>;
 };

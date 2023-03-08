@@ -1,12 +1,12 @@
-import premier_league_logo from "../../assets/images/premier_league.svg";
-import la_liga from "../../assets/images/laliga.svg";
+import premier_league_logo from "../../assets/images/premierleague.svg";
+import la_liga from "../../assets/images/laliga2-logo.svg";
 import ligue_1 from "../../assets/images/ligue-1.svg";
-import bundesliga_logo from "../../assets/images/bundesliga.svg";
-import champions from "../../assets/images/champions_league.svg";
+import bundesliga_logo from "../../assets/images/bundeslogo.svg";
+import champions from "../../assets/images/uefa-logo.svg";
 import europa_league from "../../assets/images/europa_league.svg";
-import libertadores from "../../assets/images/conmebol-libertadores.svg";
-import brasileiro from "../../assets/images/brasileiro.svg";
-import copa_do_brasil from "../../assets/images/copa-do-brasil.svg";
+import libertadores from "../../assets/images/liberta.svg";
+import brasileiro from "../../assets/images/brasileirao.svg";
+import copa_do_brasil from "../../assets/images/copadobrasil_logo.svg";
 import styles from "../../styles/GlobalLeagueStyles.module.css";
 
 export type LeagueList = {
