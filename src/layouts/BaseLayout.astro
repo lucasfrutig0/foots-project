@@ -8,16 +8,6 @@ import SideBarMenuLayout from "./SideBarMenuLayout.astro";
 const {title} = Astro.props
 ---
 
-<style>
-.wrapper {
-	padding-inline: 2rem;
-	margin: 0 auto;
-	width: 100%;
-	max-width: 1280px;
-}
-
-</style>
-
 
 <html lang="pt-BR">
 	<head>
@@ -28,20 +18,21 @@ const {title} = Astro.props
 		<title>{title}</title>
 	</head>
 
-	<body class="min-h-screen overflow-x-hidden">
-		<!-- <Header>
-			<h1>Escolha a competição:</h1>
-			<SelectLeague client:load/>
-		</Header> -->
-		
-				
-		
-		<div class="flex h-full mb-16 md:mb-4 flex-col md:grid md:grid-cols-new2">
+	<body class="
+		bg-nord-polar-night-900
+		min-h-screen 
+		overflow-x-hidden
+		dark:bg-gradient-to-tr from-nord-polar-night-700 to-gray-800
+		dark:text-nord-snow-storm-500
+		text-nord-polar-night-900
+	">
+		<div class="flex h-full mb-6 md:mb-4 flex-col md:grid md:grid-cols-new2">
 			<div>
 				<SideBarMenuLayout />
 			</div>
 			<div class="flex-1 container mx-auto px-4">
 				<main>
+					<Header />
 					<Hero client:load/>
 					<div class="flex flex-col gap-4 md:grid md:grid-cols-3 md:gap-4">
 						<slot />
@@ -49,6 +40,7 @@ const {title} = Astro.props
 				</main>
 			</div>
 		</div>
+		<FooterLayout />
 		<script src="/src/index.ts"></script>
 	</body>
 </html>
