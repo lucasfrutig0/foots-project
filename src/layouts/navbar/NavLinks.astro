@@ -26,7 +26,7 @@ const currentPath = pathname.slice(1)
       `max-w-max flex items-center justify-center 
       ${currentPath === item.slug.slice(1) ? 'active' : ''}`
     }>
-      <a href="/premier_league">
+      <a href={item.slug}>
         <img 
           src={item.icon} 
           alt="" 
