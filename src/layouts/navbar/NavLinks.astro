@@ -10,7 +10,13 @@ const currentPath = pathname.slice(1)
   }
 
   .active {
-    background-color: #D8DEE9;
+    /* background: #aa4b6b;
+    background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+    background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);  */
+    background: #373B44;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #5E81AC, #111827);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #5E81AC, #111827); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     padding: 1rem;
   }
 

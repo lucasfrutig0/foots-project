@@ -1,5 +1,5 @@
 ---
-import { CardTopScorers } from "../components/CardTopScorers";
+import { CardTopScorers } from "../../components/CardTopScorers";
 import SectionTitle from "./SectionTitle.astro";
 ---
 
@@ -16,11 +16,11 @@ import SectionTitle from "./SectionTitle.astro";
 <section class={`
   top-goals 
   col-span-full md:col-span-1 sm:row-span-3 
-  px-6 py-4
+  px-4 py-2
 dark:bg-gray-900 bg-nord-snow-storm-500 
   rounded
 `}>
-  <SectionTitle title="TOP 5 Goleador" />
+  <SectionTitle title="Jogos do Dia" />
   <div class={`h-96 snap-y snap-mandatory overflow-scroll`}>
     <CardTopScorers client:load/>
     <CardTopScorers />

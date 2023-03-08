@@ -1,16 +1,18 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import HeroLayout from "../../layouts/HeroLayout.astro";
-import MatchsOfDayLayout from "../../layouts/MatchsOfDayLayout.astro";
-import StandingsLayout from "../../layouts/StandingsLayout.astro";
-import TopScorersLayout from "../../layouts/TopScorersLayout.astro";
+import HeroLayout from "../../layouts/sections/HeroLayout.astro";
+import OverviewLayout from "../../layouts/sections/OverviewLayout.astro";
+import StandingsLayout from "../../layouts/sections/StandingsLayout.astro";
+import MatchsOfDayLayout from "../../layouts/sections/MatchsOfDayLayout.astro";
+
 
 import logo from "../../assets/images/copadobrasil_logo.svg";
 ---
 
 <BaseLayout title="Estatísticas | Copa do Brasil">
   <HeroLayout leagueName="Copa do Brasil" leagueLogo={logo} />
+  <OverviewLayout />
   <MatchsOfDayLayout />
-  <TopScorersLayout />
   <StandingsLayout />
 </BaseLayout>
+

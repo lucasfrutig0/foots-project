@@ -1,13 +1,24 @@
 ---
-import { Hero } from "../components/Hero";
-import BaseLayout from "../layouts/BaseLayout.astro";
-import MatchsOfDayLayout from "../layouts/MatchsOfDayLayout.astro";
-import StandingsLayout from "../layouts/StandingsLayout.astro";
-import TopScorersLayout from "../layouts/TopScorersLayout.astro";
+
 ---
 
-<BaseLayout title="Bem vindo ao FootS, um site sobre estatísticas de futebol!">
-  <MatchsOfDayLayout />
-  <TopScorersLayout />
-  <StandingsLayout />
-</BaseLayout>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Bem vindo</title>
+	</head>
+
+	<body class="
+		bg-nord-polar-night-900
+		min-h-screen 
+		overflow-x-hidden
+		dark:bg-gradient-to-tr from-nord-polar-night-700 to-gray-800
+		dark:text-nord-snow-storm-500
+		text-nord-polar-night-900
+	">
+		<script src="/src/index.ts"></script>
+	</body>
+</html>
