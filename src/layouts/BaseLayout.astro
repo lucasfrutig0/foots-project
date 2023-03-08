@@ -1,12 +1,46 @@
 ---
-import { Hero } from "../components/Hero";
-import { SelectLeague } from "../components/SelectLeague";
 import FooterLayout from "./FooterLayout.astro";
 import Header from "./HeaderLayout.astro";
-import SideBarMenuLayout from "./SideBarMenuLayout.astro";
+import SideBarMenuLayout from "./navbar/SideBarMenuLayout.astro";
 
 const {title} = Astro.props
 ---
+
+<style is:global>
+
+	/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #111827 #3B4252;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #111827;
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #3B4252;
+  border-radius: 14px;
+  border: 3px solid #111827;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: #111827;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: #111827;
+}
+</style>
 
 
 <html lang="pt-BR">
@@ -33,7 +67,7 @@ const {title} = Astro.props
 			<div class="flex-1 container mx-auto px-4">
 				<main>
 					<Header />
-					<Hero client:load/>
+					<!-- <Hero client:load/> -->
 					<div class="flex flex-col gap-4 md:grid md:grid-cols-3 md:gap-4">
 						<slot />
 					</div>

@@ -1,11 +1,15 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import HeroLayout from "../../layouts/HeroLayout.astro";
 import MatchsOfDayLayout from "../../layouts/MatchsOfDayLayout.astro";
 import StandingsLayout from "../../layouts/StandingsLayout.astro";
 import TopScorersLayout from "../../layouts/TopScorersLayout.astro";
+
+import premier_league_logo from "../../assets/images/premierleague.svg";
 ---
 
 <BaseLayout title="Bem vindo ao FootS, um site sobre estatísticas de futebol!">
+  <HeroLayout leagueName="Premier League" leagueLogo={premier_league_logo} />
   <MatchsOfDayLayout />
   <TopScorersLayout />
   <StandingsLayout />

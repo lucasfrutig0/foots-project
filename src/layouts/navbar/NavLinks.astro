@@ -1,0 +1,41 @@
+---
+import { navLinksItems } from "../../mocks/data/menu"
+const pathname = new URL(Astro.request.url).pathname
+const currentPath = pathname.slice(1)
+---
+
+<style>
+  .teste {
+    filter: brightness(0) saturate(100%) invert(67%) sepia(47%) saturate(258%) hue-rotate(169deg) brightness(86%) contrast(82%);
+  }
+
+  .active {
+    background-color: #D8DEE9;
+    padding: 1rem;
+  }
+
+  .active img {
+    filter: none;
+  }
+</style>
+
+
+  {
+    navLinksItems.map((item) => (
+    <li class={
+      `max-w-max flex items-center justify-center 
+      ${currentPath === item.slug.slice(1) ? 'active' : ''}`
+    }>
+      <a href="/premier_league">
+        <img 
+          src={item.icon} 
+          alt="" 
+          width="24px" 
+          height="24px" 
+          class={`teste hover:filter-none transition duration-150 ease-out hover:ease-in`}
+        >
+      </a>
+    </li>
+    ))
+  }
+
