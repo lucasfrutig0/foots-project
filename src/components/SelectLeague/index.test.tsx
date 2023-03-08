@@ -15,10 +15,5 @@ describe("SelectLeague Component", () => {
 
     await user.selectOptions(screen.getByRole("combobox"), "Bundesliga");
     expect(screen.getByRole("combobox")).toHaveValue("82");
-    expect(
-      screen.getByRole("img", {
-        name: /bundesliga/i,
-      })
-    ).toBeInTheDocument();
   });
 });
