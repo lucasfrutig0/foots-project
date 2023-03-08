@@ -48,5 +48,5 @@ type CardMatchProps = {
 export const CardMatch = ({ children }: CardMatchProps) => {
   const borderColorLeague = useColorLeague();
 
-  return <div className="mt-2"></div>;
+  return <div></div>;
 };

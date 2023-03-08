@@ -3,6 +3,7 @@ import { Hero } from "../components/Hero";
 import { SelectLeague } from "../components/SelectLeague";
 import FooterLayout from "./FooterLayout.astro";
 import Header from "./HeaderLayout.astro";
+import SideBarMenuLayout from "./SideBarMenuLayout.astro";
 
 const {title} = Astro.props
 ---
@@ -27,23 +28,27 @@ const {title} = Astro.props
 		<title>{title}</title>
 	</head>
 
-	<body class="	
-		bg-gray-900
-		bg-gradient-to-r
-		dark:from-[#0F172A]
-		dark:to-gray-800 
-		dark:text-nord-snow-storm-100 
-		overflow-x-hidden">
-		<Header>
+	<body class="min-h-screen overflow-x-hidden">
+		<!-- <Header>
 			<h1>Escolha a competição:</h1>
 			<SelectLeague client:load/>
-		</Header>
-		<Hero client:load/>
-    <main class="wrapper flex-1 grid grid-cols-3 gap-4">
-      <slot />
-    </main>
+		</Header> -->
 		
-		<FooterLayout />
+				
+		
+		<div class="flex h-full mb-16 md:mb-4 flex-col md:grid md:grid-cols-new2">
+			<div>
+				<SideBarMenuLayout />
+			</div>
+			<div class="flex-1 container mx-auto px-4">
+				<main>
+					<Hero client:load/>
+					<div class="flex flex-col gap-4 md:grid md:grid-cols-3 md:gap-4">
+						<slot />
+					</div>
+				</main>
+			</div>
+		</div>
 		<script src="/src/index.ts"></script>
 	</body>
 </html>

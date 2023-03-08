@@ -27,6 +27,9 @@ module.exports = {
         "oceanic-3": "#9333EA",
         "premiere-league-purple": "#3D195B",
       },
+      gridTemplateColumns: {
+        new2: "60px 1fr",
+      },
     },
   },
   plugins: [],
