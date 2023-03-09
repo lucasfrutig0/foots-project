@@ -21,15 +21,13 @@ dark:bg-gray-900 bg-nord-snow-storm-500
   rounded
 `}>
   <SectionTitle title="Jogos do Dia" />
-  <!-- <div class={`h-96 px-2 snap-y snap-mandatory overflow-scroll`}>
-    <CardMatchOfDay client:load/>
-    <CardMatchOfDay client:load/>
-    <CardMatchOfDay client:load/>
-    <CardMatchOfDay client:load/>
-    <CardMatchOfDay client:load/>
-    <CardMatchOfDay client:load/>
-  </div> -->
-  <div class="h-96 carousel carousel-vertical rounded-box">
+  <div class="
+    sticky top-0 bg-scroll shadow-lg shadow-gray-900 
+    w-full h-4 -mb-4 
+    transition-opacity duration-300" 
+  />
+  <div class="h-96 carousel carousel-vertical">
+   
     <div class="carousel-item">
       <CardMatchOfDay client:load/>
     </div> 
@@ -52,4 +50,10 @@ dark:bg-gray-900 bg-nord-snow-storm-500
       <CardMatchOfDay client:load/>
     </div>
   </div>
+  <div class="
+  sticky bottom-0 bg-scroll shadow-xl shadow-gray-900  
+  w-full h-4 -mt-8 rotate-180 
+  transition-opacity duration-300
+  "
+  />
 </section>

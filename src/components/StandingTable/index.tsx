@@ -1,7 +1,7 @@
 export const StandingTable = () => {
   return (
     <div className="overflow-x-auto">
-      <table className="table table-compact w-full">
+      <table className="table table-compact w-full" role="table">
         <thead className="text-center">
           <tr>
             <th></th>

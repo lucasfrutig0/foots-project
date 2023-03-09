@@ -1,13 +1,12 @@
 import { screen } from "@testing-library/react";
 import { describe } from "vitest";
-import { Hero } from ".";
+import { StandingTable } from ".";
 import { setup } from "../../utils/setupTestRender";
 
-describe("Hero Component", () => {
+describe("StandingTable Component", () => {
   it("should render without crash", () => {
-    setup(<Hero />);
-    expect(
-      screen.getByRole("heading", { name: /premier league/i })
-    ).toBeInTheDocument();
+    setup(<StandingTable />);
+
+    expect(screen.getAllByText(/arsenal/i)[0]).toBeInTheDocument();
   });
 });

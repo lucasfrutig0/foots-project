@@ -7,6 +7,6 @@ describe("CardMatchOfDay Component", () => {
   it("should render without crash", () => {
     setup(<CardMatchOfDay />);
 
-    expect(screen.getByText("PSG")).toBeInTheDocument();
+    expect(screen.getAllByText(/manchester/i)[0]).toBeInTheDocument();
   });
 });
