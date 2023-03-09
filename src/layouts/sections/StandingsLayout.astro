@@ -1,9 +1,29 @@
 ---
 import SectionTitle from "./SectionTitle.astro";
 import {StandingTable} from '../../components/StandingTable'
+import { StandingTableGroup } from "../../components/StandingTableGroup";
+import { StandingPlayoff } from "../../components/StandingPlayoff";
+import { Tab } from "../../components/Tab";
+
+const pathname = new URL(Astro.request.url).pathname
+const currentPath = pathname.slice(1)
 ---
 
 <section class="col-span-full sm:row-span-3 px-4 py-2 dark:bg-gray-900 bg-nord-snow-storm-500 p-4 rounded">
   <SectionTitle title="Classificação" />
-  <StandingTable />
+
+  {
+    (currentPath === 'europa_league' || currentPath === 'champions' || currentPath === 'libertadores') 
+      ? (
+          <div class="mt-8">
+            <Tab client:load/>
+          </div>
+        )
+      : <StandingTable />
+  }
+
+  
+
+  
+  
 </section>

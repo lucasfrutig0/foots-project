@@ -1,0 +1,13 @@
+.active {
+  border: 1px solid #5E81AC;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom: none;
+
+  font-weight: bolder;
+
+  background: #373B44;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom right, rgba(94, 129, 172,0.4), transparent);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom right, rgba(94, 129, 172,0.4), transparent); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  box-shadow: 0px -1px 20px 4px rgba(94, 129, 172,0.4);
+}
