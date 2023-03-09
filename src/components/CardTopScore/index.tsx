@@ -1,15 +1,25 @@
 import playerPic from "../../assets/images/mbappe.png";
 
-interface CardTopScorers {
+interface CardTopScoreProps {
   playerPic: string;
   name: string;
   score: number;
   team: string;
 }
 
-export const CardTopScorers = () => {
+export const CardTopScore = () => {
   return (
-    <div className="snap-start dark:bg-nord-polar-night-900 bg-nord-snow-storm-500 rounded-xl shadow-lg mt-2 py-4 flex items-center space-y-0 space-x-6">
+    <div
+      className="
+      snap-start 
+      dark:bg-nord-polar-night-900 
+      bg-nord-snow-storm-500
+      rounded-xl
+      mt-2 py-4 flex items-center space-y-0 space-x-6
+      hover:cursor-pointer
+      hover:outline outline-1 outline-nord-frost-blue
+    "
+    >
       <img
         className="block h-24 rounded-full mx-0 shrink-0 ml-2"
         src={playerPic}

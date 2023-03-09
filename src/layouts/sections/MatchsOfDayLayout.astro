@@ -1,5 +1,5 @@
 ---
-import { CardTopScorers } from "../../components/CardTopScorers";
+import { CardMatchOfDay } from "../../components/CardMatchOfDay";
 import SectionTitle from "./SectionTitle.astro";
 ---
 
@@ -21,11 +21,12 @@ dark:bg-gray-900 bg-nord-snow-storm-500
   rounded
 `}>
   <SectionTitle title="Jogos do Dia" />
-  <div class={`h-96 snap-y snap-mandatory overflow-scroll`}>
-    <CardTopScorers client:load/>
-    <CardTopScorers />
-    <CardTopScorers />
-    <CardTopScorers />
-    <CardTopScorers />
+  <div class={`h-96 px-2 snap-y snap-mandatory overflow-scroll`}>
+    <CardMatchOfDay client:load/>
+    <CardMatchOfDay client:load/>
+    <CardMatchOfDay client:load/>
+    <CardMatchOfDay client:load/>
+    <CardMatchOfDay client:load/>
+    <CardMatchOfDay client:load/>
   </div>
 </section>

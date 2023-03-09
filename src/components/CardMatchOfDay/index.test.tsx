@@ -1,11 +1,11 @@
 import { screen } from "@testing-library/react";
 import { describe } from "vitest";
-import { CardTopScorers } from ".";
+import { CardMatchOfDay } from ".";
 import { setup } from "../../utils/setupTestRender";
 
-describe("CardTopScorers Component", () => {
+describe("CardMatchOfDay Component", () => {
   it("should render without crash", () => {
-    setup(<CardTopScorers />);
+    setup(<CardMatchOfDay />);
 
     expect(screen.getByText("PSG")).toBeInTheDocument();
   });

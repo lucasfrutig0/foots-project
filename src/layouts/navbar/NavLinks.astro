@@ -13,8 +13,6 @@ const currentPath = pathname.slice(1)
     background: #373B44;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom left, #5E81AC, #111827);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom left, #5E81AC, #111827); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    padding: 1rem;
   }
 
   .active img {
@@ -26,15 +24,15 @@ const currentPath = pathname.slice(1)
   {
     navLinksItems.map((item) => (
     <li class={
-      `max-w-max flex items-center justify-center 
+      `p-2 md:p-4 w-full flex items-center justify-center 
       ${currentPath === item.slug.slice(1) ? 'active' : ''}`
     }>
       <a href={item.slug}>
         <img 
           src={item.icon} 
-          alt="" 
-          width="24px" 
-          height="24px" 
+          alt={item.slug.slice(1)} 
+          width="18px" 
+          height="18px" 
           class={`teste hover:filter-none transition duration-150 ease-out hover:ease-in`}
         >
       </a>
