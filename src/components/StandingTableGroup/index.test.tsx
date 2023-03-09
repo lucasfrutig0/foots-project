@@ -7,6 +7,6 @@ describe("StandingTableGroup Component", () => {
   it("should render without crash", () => {
     setup(<StandingTableGroup />);
 
-    expect(screen.getByText(/aloha/i)).toBeInTheDocument();
+    expect(screen.getByText(/grupo a/i)).toBeInTheDocument();
   });
 });
