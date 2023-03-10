@@ -19,7 +19,11 @@ const currentPath = pathname.slice(1)
             <Tab client:load/>
           </div>
         )
-      : <StandingTable />
+      : (
+        <div class="mt-8">
+          <StandingTable />
+        </div>
+      )
   }
 
   
